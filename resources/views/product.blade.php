@@ -29,5 +29,17 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div class="trending-wrapper">
+        <h3>Trending Products</h3>
+        @foreach ($products as $trending)
+        <div class="trending-item">
+            <img src="{{$trending->gallery}}" class="trending-img">
+            <div class="">
+              <h5>{{$trending->name}}</h5>
+            
+            </div>
+          </div>
+        @endforeach
+      </div>
 </div>
 @endsection
