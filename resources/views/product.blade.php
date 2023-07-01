@@ -12,10 +12,12 @@
       
         @foreach ($products as $item)
         <div class="carousel-item active">
+           <a href="/detail/{{$item->id}}">
             <img src="{{$item->gallery}}" class="slider-img d-block w-100">
             <div class="carousel-caption d-none d-md-block">
               <h5>{{$item->name}}</h5>
               <p>{{$item->description}}</p>
+           </a>
             </div>
           </div>
         @endforeach
@@ -33,10 +35,11 @@
         <h3>Trending Products</h3>
         @foreach ($products as $trending)
         <div class="trending-item">
+            <a href="/detail/{{$trending->id}}">
             <img src="{{$trending->gallery}}" class="trending-img">
             <div class="">
               <h5>{{$trending->name}}</h5>
-            
+            </a>
             </div>
           </div>
         @endforeach
