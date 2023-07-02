@@ -31,29 +31,30 @@
         </tbody>
       </table>
       <div>
-        <form>
+        <form action="/orderplace" method="POST">
+            @csrf
             <div class="form-group">
-              <textarea type="email" class="form-control" placeholder="Enter Your address"></textarea>
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <textarea name="address" class="form-control" placeholder="Enter Your address"></textarea>
+             
             </div>
     <fieldset class="form-group">
     <div class="row">
       
       <div class="col-sm-10">
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="payment"  value="option1" checked>
+          <input class="form-check-input" type="radio" name="payment"  value="cash" checked>
           <label class="form-check-label" for="gridRadios1">
              Online Payment
           </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="payment"  value="option2" checked>
+            <input class="form-check-input" type="radio" name="payment"  value="cash" checked>
             <label class="form-check-label" for="gridRadios1">
               EMI Payment
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="payment"  value="option3" checked>
+            <input class="form-check-input" type="radio" name="payment"  value="cash" checked>
             <label class="form-check-label" for="gridRadios1">
               Payment on Delivery
             </label>
