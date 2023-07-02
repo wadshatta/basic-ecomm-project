@@ -2,7 +2,7 @@
 @section('content')
 <div class="container custom-login">
     <div class="row justify-content-center">
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-sm-offset-4">
             <form action="login" method="POST">
                 @csrf
                 <div class="form-group">
