@@ -24,7 +24,7 @@ if(Session()->has('user')){
     </form>
     <ul class="nav navbar-nav navbar-right">
       
-      <li class="active"><a href="#"> Card({{$total}})</a></li>
+      <li class="active"><a href="/cartlist"> Card({{$total}})</a></li>
       @if(Session::has('user'))
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}

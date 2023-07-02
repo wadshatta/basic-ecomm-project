@@ -43,5 +43,13 @@
     .detail-img{
       height: 300px;
     }
+    .trending-image{
+      height: 300px;
+    }
+    .cart-list-devider{
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
 </style>
 </html>
